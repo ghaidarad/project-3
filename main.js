@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
 
-    $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=15&callback=",
+    $.get("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=15&callback=",
         function (q) {
             console.log(q)
             q.forEach(el =>{
