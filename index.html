@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <link rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="res-container">
+    <header>
+      <h1>Daily Designer quote</h1>
+      <section>
+        <ul>
+          <button class="home"> Add Quote </button>
+          <button class="allquote"> All Quote </button>
+        </ul>
+        
+      </section>
+    </header>
+    <blockquote class="quote">
+    </blockquote>
+    <div class="rquo"> </div>
+    <div class="userquote">
+
+      Quote: <input class="c" type="text" name="content"> <br>
+      Aouther: <input class="t" type="text" name="title"> <br>
+
+      <button class="submit">Add new quote</button>
+      <button class="update">update</button>
+
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDd_aJS4NaViII9N8TW7GO25OqbI_PDsYc",
+    authDomain: "quote-97ac3.firebaseapp.com",
+    databaseURL: "https://quote-97ac3.firebaseio.com",
+    projectId: "quote-97ac3",
+    storageBucket: "quote-97ac3.appspot.com",
+    messagingSenderId: "1041479796174"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</html>
